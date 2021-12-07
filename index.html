@@ -161,7 +161,7 @@ document.oncontextmenu=new Function("return false")
   <div>
     <div class="intro">
       <a class="logo" href="/" aria-label="Notepad&#43;&#43; home page">
-        <img src="C:\Users\DESKTOP\Desktop\adk\ADK.png" alt="">
+        <img src="ADK.png" alt="">
       </a>
       <p class="library-desc">
         
@@ -237,21 +237,7 @@ if (window.location.href === "https://notepad-plus-plus.org/downloads/" || windo
     carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CKYIE53I&placement=notepad-plus-plusorg";
     carbonScript.id = "_carbonads_js";
     document.getElementById("carbon-block").appendChild(carbonScript);
-}
-else {
-    try {
-      fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
-        return true;
-      }).catch(function(e) {
-        var carbonScript = document.createElement("script");
-        carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CE7DVKJM&placement=notepad-plus-plusorg";
-        carbonScript.id = "_carbonads_js";
-        document.getElementById("carbon-block").appendChild(carbonScript);
-      });
-    } catch (error) {
-      console.log(error);
-    }
-}
+
 
 </script>
   </div>
